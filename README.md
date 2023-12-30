@@ -8,6 +8,7 @@ Follow below order while executing yaml files:
 2) APPLICATION SERVERS SETUP<br/>catalogue - user - cart - shipping - payment - dispatch
 
 3) WEB SERVER SETUP<br/>web
+
 To run a playbook
 ```
 ansible-playbook -e component=<server-name> main.yml
