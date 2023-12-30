@@ -13,7 +13,7 @@ To run a playbook
 ```
 ansible-playbook -e component=<server-name> main.yml
 ```
-Example:
+Example:<br/>
 To run a mongodb server
 ```
 ansible-playbook -e component=mongodb main.yml
