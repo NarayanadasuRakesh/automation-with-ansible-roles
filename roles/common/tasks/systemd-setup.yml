@@ -1,5 +1,10 @@
+# - name: Copy "{{component}}" service file
+#   ansible.builtin.copy: # file present in files directory
+#     src: "{{component}}.service.j2"
+#     dest: "/etc/systemd/system/{{component}}.service"
+
 - name: Copy "{{component}}" service file
-  ansible.builtin.copy:
+  ansible.builtin.template: # file present in template directory
     src: "{{component}}.service.j2"
     dest: "/etc/systemd/system/{{component}}.service"
 
