@@ -4,7 +4,7 @@
     state: present
 
 - name: Install dependencies and build applicaion
-  ansible.builtin.command: "{{ item }}"
+  ansible.builtin.command: "{{item}}"
   loop:
     - go mod init dispatch
     - go get
