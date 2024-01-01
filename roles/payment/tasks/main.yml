@@ -10,5 +10,5 @@
 
 - name: service file setup
   ansible.builtin.import_role:
-    name: commom
+    name: common
     tasks_from: systemd-setup
