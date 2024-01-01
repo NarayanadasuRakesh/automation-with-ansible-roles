@@ -18,7 +18,7 @@
   register: user_count
   when: component == "user"
 
-- name: Load schema
+- name: Load catalogue data
   ansible.builtin.command: mongo --host {{MONGODB_HOST}} < /app/schema/catalogue.js
   when: component == "catalogue" and product_count.stdout == "0"
 
