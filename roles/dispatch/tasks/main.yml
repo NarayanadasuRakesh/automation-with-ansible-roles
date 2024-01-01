@@ -9,6 +9,6 @@
     tasks_from: golang-setup
 
 - name: service file setup
-  ansible.builtin.import-role:
+  ansible.builtin.import_role:
     name: common
     tasks_from: systemd-setup
