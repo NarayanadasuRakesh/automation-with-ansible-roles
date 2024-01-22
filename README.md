@@ -9,6 +9,8 @@ Follow below order while executing yaml files:
 
 3) WEB SERVER SETUP<br/>web
 
+Add your domain names or IP addresses in variables.yml and inventory.ini files
+
 To run a playbook
 ```
 ansible-playbook -e component=<server-name> main.yml
